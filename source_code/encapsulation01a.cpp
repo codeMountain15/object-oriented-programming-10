@@ -16,7 +16,7 @@ public:
 
 int main()
 {
-    PR pc(3, 4);
+    PR pc(-3, 4);
     cout << pc.sum() << endl;
 
     return 0;
