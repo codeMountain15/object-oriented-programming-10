@@ -6,20 +6,23 @@
 using namespace std;
 
 class PR {
-
+private:
+    const int pass_limit = 6; // the limit has changed!
 public:
-    unsigned short int a;
-    unsigned short int b;
-
-    PR(unsigned short int input1, unsigned short int input2) 
-        :a(input1), b(input2){};
-    int sum() { return a + b; }
+    int grade;
+    PR(int input1) : grade(input1) {};
+    bool passed() {
+        return (grade >= pass_limit) ? true : false;
+    }
 };
 
 int main()
 {
-    PR pc(-3, 4);
-    cout << pc.a + pc.b << endl;
+    bool result;
+    PR pc(5);
+
+    result = (pc.grade >= 5) ? true : false;
+    cout << result << endl;
 
     return 0;
 }
