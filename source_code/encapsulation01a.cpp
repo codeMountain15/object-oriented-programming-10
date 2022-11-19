@@ -7,17 +7,19 @@ using namespace std;
 
 class PR {
 private:
-    short int a;
-    short int b;
+    int grade;
+    const int pass_limit = 5;
 public:
-    PR(short int input1, short int input2) :a(input1), b(input2){};
-    int sum() { return a + b; }
+    PR(int input1) : grade(input1) {};
+    bool passed() { 
+        return (grade >= pass_limit) ? true : false;
+    }
 };
 
 int main()
 {
-    PR pc(-3, 4);
-    cout << pc.sum() << endl;
+    PR pc(5);
+    cout << pc.passed() << endl;
 
     return 0;
 }
