@@ -8,7 +8,7 @@ using namespace std;
 
 int main() {
 
-	// createand & open
+	// create and open
 	ofstream the_file("my_file.txt");
 
 	// Write
