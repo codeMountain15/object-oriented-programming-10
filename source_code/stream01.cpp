@@ -17,5 +17,5 @@ int main() {
 	// Close
 	the_file.close();
 
-	return 1;
+	return 0;
 }
