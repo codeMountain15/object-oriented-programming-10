@@ -23,5 +23,5 @@ int main() {
 	// Close the file
 	read_file.close();
 
-	return 1;
+	return 0;
 }
