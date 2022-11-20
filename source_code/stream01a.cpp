@@ -22,5 +22,5 @@ int main() {
 	// show me the folder again
 	system("dir");
 
-	return 1;
+	return 0;
 }
