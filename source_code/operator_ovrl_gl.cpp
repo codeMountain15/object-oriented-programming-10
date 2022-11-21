@@ -8,10 +8,11 @@ using namespace std;
 
 class Tiny_Class
 {
-public:
+private:
     int id;
+public:
     Tiny_Class(int ipt = 0) { id = ipt; } // constructor
-    //int get_id() { return id; }
+    int get_id() { return id; }
 
     friend Tiny_Class& operator+ (const Tiny_Class&, const Tiny_Class&);
 };
@@ -29,7 +30,7 @@ int main()
     Tiny_Class a1(5), a2(6), a3;
 
     a3 = a1+a2;
-    cout << a3.id;
+    cout << a3.get_id();
 
     return 0;
 }
