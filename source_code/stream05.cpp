@@ -14,8 +14,8 @@ public:
 	{
 		real = input1; imaginary = input2;
 	}
-	friend ostream& operator << (ostream& out_stream, const Complex_number& c);
-	friend istream& operator >> (istream& in_stream, Complex_number& c);
+	friend ostream& operator << (ostream&, const Complex_number&);
+	friend istream& operator >> (istream&, Complex_number&);
 };
 
 ostream& operator << (ostream& out_stream, const Complex_number& obj)
